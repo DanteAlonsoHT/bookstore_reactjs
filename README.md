@@ -1,3 +1,65 @@
+![](https://img.shields.io/badge/Microverse-blueviolet) 
+
+# Math Magicians | Full Website - Routes.
+
+For this repository, I've created a project to create a React component, the main objective is to learn the way to create React apps using the official documentation, learning how to set up linters for React projects, learning how to create and manage React components properly, learning how to update states in the components to add functionalities in the app using the React components, learning how to implement hooks in React, and how to set up custom routes for our project.
+
+[![Deploy to Netlify](https://img.shields.io/badge/Netlify--app-URL%20Click%20on%20Me-%2300ad9f)](https://unruffled-beaver-3c2942.netlify.app/)
+
+<center>
+<div>
+</div>
+</center>
+
+## Built With 🔨
+
+- JavaScript
+- HTML
+- CSS
+- React JS
+- Redux
+- Visual Studio Code
+- Git & Github
+
+### Install
+
+To get a local copy up and running follow these simple example steps.
+- Open terminal
+- Clone this project by the command: 
+
+```
+$ git clone https://github.com/DanteAlonsoHT/bookstore_reactjs.git
+```
+
+- Then go to the main folder using the next command:
+
+```
+$ cd bookstore_reactjs
+```
+
+- Then run the next command to install all dependencies:
+
+```
+$ npm install
+```
+
+
+- Finally, run the next command in the terminal to see the web app in your local browser, or also, you can use Live Server in Visual Studio Code.
+
+```
+$ npm start
+```
+
+### Prerequisites
+
+- IDE to edit and run the code (We use Visual Studio Code 🔥).
+- [Node.js](https://nodejs.org/en/download/) already downloaded.
+
+
+### Usage
+
+- For anyone who wants to practice React skills.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +130,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Authors
+
+👤 **Dante Alonso**
+
+- GitHub: [@DanteAlonsoHT](https://github.com/DanteAlonsoHT)
+- Twitter: [@dante_dante1](https://twitter.com/dante_dante1)
+- LinkedIn: [Dante Alonso](https://www.linkedin.com/in/dante-alonso/)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/DanteAlonsoHT/bookstore_reactjs/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used 🔰
+- Inspiration 💘
+- Microverse program ⚡
+- My standup team 🏹
+- My family's support 🙌
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
