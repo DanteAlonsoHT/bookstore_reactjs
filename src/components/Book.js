@@ -8,14 +8,14 @@ const Book = (props) => {
   } = bookInfo;
   const dispatch = useDispatch();
 
-  const deleteBook = (e) => {
+  const deleteBook = (e, index) => {
     e.preventDefault();
-    dispatch(removeBook(title));
+    dispatch(removeBook(index));
   };
 
   return (
     <>
-      <div className="list-item" id={`book, ${index}!`}>
+      <div className="list-item" id={`book-${index}`}>
         <div className="descriptionBook">
           <strong>{category}</strong>
           <h2>{title}</h2>
@@ -23,7 +23,7 @@ const Book = (props) => {
           <div className="interact">
             <button id={`CommentButton-${index}`} type="button">Comments</button>
             |
-            <button id={`RemoveButton-${index}`} type="button" onClick={(e) => deleteBook(e)}>Remove</button>
+            <button id={`RemoveButton-${index}`} type="button" onClick={(e) => deleteBook(e, index)}>Remove</button>
             |
             <button id={`EditButton-${index}`} type="button">Edit</button>
           </div>
