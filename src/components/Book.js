@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { deleteData } from '../redux/books/API';
 
 const Book = (props) => {
   const { bookInfo, index } = props;
@@ -10,7 +10,7 @@ const Book = (props) => {
 
   const deleteBook = (e, index) => {
     e.preventDefault();
-    dispatch(removeBook(index));
+    dispatch(deleteData(index));
   };
 
   return (
