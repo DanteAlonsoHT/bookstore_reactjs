@@ -1,19 +1,43 @@
-const FormBooks = () => (
-  <form>
-    <h2>ADD NEW BOOK</h2>
-    <input type="text" id="titleBook" name="title" placeholder="Book title" />
-    <input type="text" id="authorBook" name="author" placeholder="Book Author" />
+import { v4 as uuidv4 } from 'uuid';
+import { useDispatch } from 'react-redux';
+import { useState } from 'react';
+import { addBook } from '../redux/books/books';
 
-    <select id="categoryBook" name="category">
-      <option selected disabled>Action</option>
-      <option value="ScienceFiction">Science Fiction</option>
-      <option value="Drama">Drama</option>
-      <option value="Economy">Economy</option>
-      <option value="Romance">Romance</option>
-    </select>
+const FormBooks = () => {
+  const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
+  const [author, setAuthor] = useState('');
 
-    <input type="submit" value="ADD BOOK" />
+  const submitBookToStore = (e) => {
+    e.preventDefault();
+    const newBook = {
+      id: uuidv4(),
+      title,
+      author,
+      category,
+    };
+    dispatch(addBook(newBook));
+  };
 
-  </form>
-);
+  return (
+    <form id="formBook">
+      <h2>ADD NEW BOOK</h2>
+      <input type="text" id="titleBook" name="title" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
+      <input type="text" id="authorBook" name="author" placeholder="Book Author" onChange={(e) => setAuthor(e.target.value)} />
+
+      <select id="categoryBook" name="category" onChange={(e) => setCategory(e.target.value)}>
+        <option selected disabled>Action</option>
+        <option value="ScienceFiction">Science Fiction</option>
+        <option value="Drama">Drama</option>
+        <option value="Economy">Economy</option>
+        <option value="Romance">Romance</option>
+      </select>
+
+      <button type="button" onClick={(e) => submitBookToStore(e)}>ADD BOOK</button>
+
+    </form>
+  );
+};
+
 export default FormBooks;
