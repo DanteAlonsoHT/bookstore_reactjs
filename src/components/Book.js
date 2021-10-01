@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { deleteData } from '../redux/books/API';
+import { deleteData } from '../redux/books/requestAPI';
 
 const Book = (props) => {
   const { bookInfo, index } = props;
