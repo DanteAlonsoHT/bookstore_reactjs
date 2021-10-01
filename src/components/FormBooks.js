@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { addBook } from '../redux/books/books';
+import { addData } from '../redux/books/requestAPI';
 
 const FormBooks = () => {
   const dispatch = useDispatch();
@@ -12,12 +12,12 @@ const FormBooks = () => {
   const submitBookToStore = (e) => {
     e.preventDefault();
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
       author,
       category,
     };
-    dispatch(addBook(newBook));
+    dispatch(addData(newBook));
   };
 
   return (
@@ -35,7 +35,6 @@ const FormBooks = () => {
       </select>
 
       <button type="button" onClick={(e) => submitBookToStore(e)}>ADD BOOK</button>
-
     </form>
   );
 };
