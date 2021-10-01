@@ -8,9 +8,9 @@ export const addBook = (book) => ({
   book,
 });
 
-export const removeBook = (title) => ({
+export const removeBook = (id) => ({
   type: REMOVE_BOOK,
-  title,
+  id,
 });
 
 const reducer = (state = initialState, action) => {
@@ -18,7 +18,7 @@ const reducer = (state = initialState, action) => {
     case ADD_BOOK:
       return ([...state, action.book]);
     case REMOVE_BOOK:
-      return (state.filter((book) => book.title !== action.title));
+      return (state.filter((book) => book.id !== action.id));
     default:
       return state;
   }
