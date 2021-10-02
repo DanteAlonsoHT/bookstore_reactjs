@@ -21,21 +21,23 @@ const FormBooks = () => {
   };
 
   return (
-    <form id="formBook">
-      <h2>ADD NEW BOOK</h2>
-      <input type="text" id="titleBook" name="title" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
-      <input type="text" id="authorBook" name="author" placeholder="Book Author" onChange={(e) => setAuthor(e.target.value)} />
+    <>
+      <h2 className="formTitle">ADD NEW BOOK</h2>
+      <form id="formBook">
+        <input type="text" id="titleBook" name="title" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
+        <input type="text" id="authorBook" name="author" placeholder="Book Author" onChange={(e) => setAuthor(e.target.value)} />
 
-      <select id="categoryBook" name="category" onChange={(e) => setCategory(e.target.value)}>
-        <option selected disabled>Action</option>
-        <option value="ScienceFiction">Science Fiction</option>
-        <option value="Drama">Drama</option>
-        <option value="Economy">Economy</option>
-        <option value="Romance">Romance</option>
-      </select>
+        <select id="categoryBook" name="category" onChange={(e) => setCategory(e.target.value)}>
+          <option selected disabled>Action</option>
+          <option value="ScienceFiction">Science Fiction</option>
+          <option value="Drama">Drama</option>
+          <option value="Economy">Economy</option>
+          <option value="Romance">Romance</option>
+        </select>
 
-      <button type="button" onClick={(e) => submitBookToStore(e)}>ADD BOOK</button>
-    </form>
+        <button type="button" onClick={(e) => submitBookToStore(e)}>ADD BOOK</button>
+      </form>
+    </>
   );
 };
 
