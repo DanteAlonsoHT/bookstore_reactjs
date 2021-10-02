@@ -4,6 +4,8 @@
 
 For this repository, I've created a project to create a React project using Redux, the main objective is to learn the way to create an application to store, use actions and reducers in React, to understand the concepts about state management, connect React and Redux, connect an existing API via Redux and use the data to display something in the UI, and apply React best practices and language style guides in code.
 
+## [**Live Demo Link by Netlify 👀**](https://vigilant-perlman-33a31f.netlify.app/)
+
 <center>
 <div>
     <img src="./assets/bookstoreImageReadme.PNG">
