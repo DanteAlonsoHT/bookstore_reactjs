@@ -1,5 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #efefef;
+}
+
+#root {
+  margin: 0 auto;
+  min-width: 750px;
+  max-width: 1200px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  background-color: #fff;
+  padding: 2.5rem 0;
+}
+
+nav div,
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div a {
+  text-decoration: none;
+  margin-right: 2.5rem;
+  font-weight: 600;
+  color: #aaa;
+}
+
+.box-icon {
+  margin: 0 1rem;
+  border: 1px solid #aaa;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+.active {
+  color: #888;
+}
+
+h1 {
+  margin: 0 2.5rem;
+  color: #0ea3e5;
+  font-weight: 900;
+  font-size: 1.875rem;
+}
+
+form button {
+  width: 20%;
+}
+
+form button,
+.statusBook button {
+  background-color: #0ea3e5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.7rem;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1.3rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.list-item {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1.7rem;
+}
+
+.descriptionBook {
+  min-width: 250px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.descriptionBook strong {
+  color: #888;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.descriptionBook h2 {
+  margin: 0.15rem 0;
+}
+
+.descriptionBook p {
+  color: #0ea3e5;
+  margin-top: 0;
+}
+
+.descriptionBook button {
+  border: none;
+  background-color: #fff;
+  color: #0ea3e5;
+}
+
+.buttonLine::after {
+  content: "|";
+  color: #ddd;
+  margin: 1rem;
+}
+
+.descriptionBook:last-child::after {
+  content: "";
+}
+
+.leftContent {
+  display: flex;
+}
+
+.progressBook {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.progressBook h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.progressBook p {
+  margin: 0;
+}
+
+.progressBook::after {
+  content: "|";
+  color: #eee;
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0 1rem;
+}
+
+.barStatus {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 3rem;
+  border-image-slice: 1;
+  border-color: #0ea3e5;
+  margin-right: 1rem;
+}
+
+.statusBook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.statusBook h5 {
+  margin: 0;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.formTitle {
+  margin-top: 4rem;
+  font-size: 1.25rem;
+  color: #888;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+form input,
+form select {
+  background-color: #fff;
+  padding: 0.6rem;
+  font-size: 0.85rem;
+  margin-right: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  width: 26%;
 }
