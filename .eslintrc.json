@@ -21,7 +21,8 @@
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
       "no-shadow": "off",
-      "import/no-extraneous-dependencies": "off"
+      "import/no-extraneous-dependencies": "off",
+      "selector-type-no-unknown": "off"
     },
     "ignorePatterns": [
       "dist/",
