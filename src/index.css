@@ -34,8 +34,7 @@ nav div a {
   color: #aaa;
 }
 
-/* stylelint-disable-next-line selector-type-no-unknown */
-box-icon {
+.box-icon {
   margin: 0 1rem;
   border: 1px solid #aaa;
   border-radius: 2rem;

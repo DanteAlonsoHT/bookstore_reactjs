@@ -19,7 +19,9 @@ function App() {
             <p>CATEGORIES</p>
           </NavLink>
         </div>
-        <box-icon name="user" type="solid" color="#0ea3e5" size="md" />
+        <div className="box-icon">
+          <box-icon name="user" type="solid" color="#0ea3e5" size="md" />
+        </div>
       </nav>
       <Switch>
         <Route exact path="/"><Home /></Route>
