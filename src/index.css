@@ -8,10 +8,6 @@ body {
   background-color: #efefef;
 }
 
-button:hover {
-  cursor: pointer;
-}
-
 #root {
   margin: 0 auto;
   min-width: 750px;
@@ -21,7 +17,6 @@ button:hover {
 
 nav {
   background-color: #fff;
-  font-family: Montserrat;
   padding: 2.5rem 0;
 }
 
@@ -39,8 +34,12 @@ nav div a {
   color: #aaa;
 }
 
+/* stylelint-disable-next-line selector-type-no-unknown */
 box-icon {
   margin: 0 1rem;
+  border: 1px solid #aaa;
+  border-radius: 2rem;
+  padding: 0.5rem;
 }
 
 .active {
@@ -52,6 +51,25 @@ h1 {
   color: #0ea3e5;
   font-weight: 900;
   font-size: 1.875rem;
+}
+
+form button {
+  width: 20%;
+}
+
+form button,
+.statusBook button {
+  background-color: #0ea3e5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.7rem;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1.3rem;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .list-item {
@@ -150,16 +168,6 @@ h1 {
   font-weight: 400;
 }
 
-.statusBook  button, form button {
-  background-color: #0ea3e5;
-  font-family: 'Roboto Slab', serif;
-  font-size: 0.7rem;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  padding: .5rem 1.3rem;
-}
-
 .formTitle {
   margin-top: 4rem;
   font-size: 1.25rem;
@@ -172,7 +180,8 @@ form {
   margin-bottom: 4rem;
 }
 
-form input, form select {
+form input,
+form select {
   background-color: #fff;
   padding: 0.6rem;
   font-size: 0.85rem;
@@ -180,8 +189,4 @@ form input, form select {
   border: 1px solid #aaa;
   border-radius: 3px;
   width: 26%;
-}
-
-form button {
-  width: 20%;
 }
